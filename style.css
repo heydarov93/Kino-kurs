@@ -19,13 +19,21 @@ body {
   overflow-x: hidden;
 }
 
+h1, h2, h4 {
+  line-height: 1;
+}
+
 .main-container {
   max-width: 128rem;
   margin: 0 auto;
-  padding: 2.4rem 8.5rem 0;
+  padding: 2.4rem 0 0;
 
   /* for developing only */
   margin-bottom: 50vh;
+}
+
+.lr-padding {
+  padding: 0 8.5rem;
 }
 
 .logo-cont {
@@ -63,6 +71,7 @@ body {
   font-family: "Roboto Slab", sans-serif;
   font-size: 8rem;
   font-weight: 700;
+  margin-bottom: 2.4rem;
 }
 
 .hero-text {
@@ -141,8 +150,8 @@ body {
   margin-bottom: 7rem;
 }
 
-.about-text-container {
-}
+/* .about-text-container {
+} */
 
 .about-text {
   font-size: 2.4rem;
@@ -178,4 +187,313 @@ body {
   right: -2.6rem;
   bottom: -2.9rem;
   z-index: -9999;
+}
+
+.about-bottom {
+  margin-top: 10rem;
+
+  display: flex;
+  align-items: center;
+  gap: 13rem;
+}
+
+.about-bottom-left {
+  width: 23.2rem;
+  height: 20.3rem;
+  position: relative;
+}
+
+.about-img-2 {
+  max-width: 100%;
+}
+
+.about-ellipse-2 {
+  width: 18.9rem;
+  height: 3.2rem;
+
+  position: absolute;
+  bottom: -1.6rem;
+  left: 3.3rem;
+  z-index: -9999;
+}
+
+.about-bottom-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 9.5rem;
+}
+
+.about-mini-col {
+  width: 15rem;
+  align-self: flex-start;
+}
+
+.about-h4 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-bottom-p {
+  font-size: 1.8rem;
+}
+
+/* ********************* */
+/* FORMAT LESSON SECTION */
+/* ********************* */
+
+.format-lesson-section {
+margin-top: 17.8rem;
+}
+
+.format-les-title {
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  font-size: 5.5rem;
+  margin-bottom: 9rem;
+}
+
+.formats {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 11.5rem;
+}
+
+.formats-col {
+align-self: flex-start;
+}
+
+.formats-col-h4 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+
+  color: #1E4681;
+}
+
+.formats-col-p {
+  font-size: 1.8rem;
+}
+
+
+/* ********************* */
+/* WHAT WE'LL LEARN SECTION */
+/* ********************* */
+
+.what-we-learn-section {
+  margin-top: 18rem;
+}
+
+.wwl-title {
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  font-size: 5.5rem;
+
+  margin-bottom: 3.2rem;
+}
+
+.wwl-list {
+  list-style: none;
+  width: 67.8rem;
+  padding-left: 1.6rem;
+}
+
+.wwl-list-item {
+  font-size: 2.4rem;
+  position: relative;
+}
+
+
+.wwl-list-item::before {
+  content: '';
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  left: -1.6rem;
+  top: 1.8rem;
+  transform: translateY(-50%);
+}
+
+
+
+/* ****************************** */
+/* COURSE PROGRAM (CARDS) SECTION */
+/* ****************************** */
+
+.course-program-section {
+  margin-top: 23rem;
+  padding: 0 6.4rem;
+  margin-bottom: 12rem;
+}
+
+.program-title {
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  font-size: 5.5rem;
+
+  margin-bottom: 9.6rem;
+  margin-left: 3.6rem;
+}
+
+.cards {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 3.5rem;
+}
+
+.card {
+  height: 32.8rem;
+  background: #fff;
+  box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.25);
+  border-radius: 3rem;
+}
+
+.card-head {
+  height: 16rem;
+}
+
+.card-img {
+width: 100%;
+height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16.8rem;
+ padding: 1.2rem 2rem 2.3rem;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.card-text {
+  font-size: 2rem;
+}
+
+
+/* ******************* */
+/* TESTIMONIAL SECTION */
+/* ******************* */
+
+
+.testimonial-section {
+  background: #efefef;
+  padding-top: 9rem;
+  padding-bottom: 11rem;
+}
+
+.testimonial-title {
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  font-size: 5.5rem;
+  margin-bottom: 6.4rem;
+}
+
+.testimonial-quote {
+  width: 79.1rem;
+  height: 45.1rem;
+  box-shadow: 0.1rem 0.1rem 2rem rgba(0, 0, 0, 0.25);
+  border-radius: 3rem;
+
+  padding: 4rem 2.6rem;
+  background-color: #fff;
+}
+
+.tq-text {
+  width: 70rem;
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.tq-bottom {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.tb-left {
+  display: inline-block;
+}
+
+.testimonial-img {
+  width: 19rem;
+  height: 16.9rem;
+  border-radius: 50%;
+}
+
+
+.tb-author-name {
+  display: inline-block;
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.tb-icon {
+  width: 3.2rem;
+  height: 3.1;
+}
+
+
+/* ******************** */
+/* ANNOUNCEMENT SECTION */
+/* ******************** */
+
+.announcement-section {
+  background: #9dc9c8;
+  padding-top: 18rem;
+  padding-bottom: 18.5rem;
+}
+
+.ann-title {
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  font-size: 5.5rem;
+  margin-bottom: 5.5rem;
+}
+
+.price-box {
+margin-bottom: 6.4rem;
+}
+
+.price-text {
+  font-size: 2.5rem;
+}
+
+.price strong,
+.price span {
+  font-weight: 400;
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.ann-details {
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+gap: 7rem;
+}
+
+.ann-detail-col {
+width: 29.4rem;
+}
+
+.ann-detail-title {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.ann-detail-text {
+  font-size: 1.8rem;
 }
