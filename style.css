@@ -13,6 +13,8 @@ html {
 
 :root {
   --main-screen-width: 128rem;
+  --lrpadding-cards-section: 12.8rem;
+  --card-number-inrow: 3;
 }
 
 body {
@@ -297,7 +299,6 @@ h4 {
 }
 
 .wwl-list {
-  list-style: none;
   width: 67.8rem;
   padding-left: 1.6rem;
 }
@@ -305,18 +306,6 @@ h4 {
 .wwl-list-item {
   font-size: 2.4rem;
   position: relative;
-}
-
-.wwl-list-item::before {
-  content: "";
-  width: 0.6rem;
-  height: 0.6rem;
-  border-radius: 50%;
-  background-color: #000;
-  position: absolute;
-  left: -1.6rem;
-  top: 1.8rem;
-  transform: translateY(-50%);
 }
 
 /* ****************************** */
@@ -339,13 +328,20 @@ h4 {
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
-  height: 32.8rem;
+  width: calc(
+    (var(--main-screen-width) - var(--lrpadding-cards-section)) /
+      var(--card-number-inrow) - 3.5rem
+  );
+  /* max-width: 35rem; */
+  /* width: calc(33% - 3.5rem); */
+  margin: 3.5rem 3.5rem 0 0;
+
+  /* margin: 3.5rem auto 0; */
   background: #fff;
   box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.25);
   border-radius: 3rem;
@@ -595,3 +591,195 @@ h4 {
   margin-right: 2.2rem;
 }
 
+/* *********************************************** */
+/* tablet- ekran ölçüsü 992px-dən 1279px-ə qədər  */
+/* ********************************************* */
+
+@media (62em <= width < 80em) {
+
+  .lr-padding {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .logo-cont {
+    margin-bottom: 5.68rem;
+  }
+
+  .logo-cont img {
+    width: 6.487rem;
+    height: 3.823rem;
+  }
+
+.header-mini-info {
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .header-mini-info img {
+    width: 1.274rem;
+    height: 1.216rem;
+  }
+
+.hero-left {
+    width: 36.372rem;
+  }
+
+  .hero-title {
+    font-size: 4.6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+    width: 26.4rem;
+  }
+
+  .hero-right img {
+    width: 17.607rem;
+    height: 20.618rem;
+  }
+  
+  .hero-right .ellipse-1 {
+    width: 15.869rem;
+    height: 2.375rem;
+    
+    left: 1.8rem;
+    bottom: -0.6rem;
+  }
+  
+/*  **************    */
+/*   QUOTE SECTION   */
+/*  **************  */
+
+.quote-section {
+  margin-top: 5rem;
+}
+
+
+.quote {
+  font-size: 1.4rem; 
+  padding: 1.1rem 1.5rem;
+  width: 28.011rem;
+  height: 11.583rem;
+  border-radius: 0.3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quote-author {
+  font-size: 1.2rem;
+}
+
+
+/*  **************    */
+/*   ABOUT SECTION   */
+/*  **************  */
+
+ .about-section {
+  margin-top: 10rem;
+}
+
+.about-left {
+  width: 38.341rem;
+}
+
+.about-title {
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+}
+
+.about-text {
+  font-size: 1.4rem;
+}
+
+.about-text:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+
+/*
+
+
+
+.about-right {
+  width: 36.6rem;
+  align-self: flex-end;
+
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 2.9rem;
+}
+
+.about-img-box {
+  position: relative;
+}
+
+.about-img-1 {
+  width: 31.4rem;
+  height: 31.5rem;
+}
+
+.about-ellipse-1 {
+  width: 36.6rem;
+  height: 5.9rem;
+  position: absolute;
+  right: -2.6rem;
+  bottom: -2.9rem;
+  z-index: -9999;
+}
+
+.about-bottom {
+  margin-top: 10rem;
+
+  display: flex;
+  align-items: center;
+  gap: 13rem;
+}
+
+.about-bottom-left {
+  width: 23.2rem;
+  height: 20.3rem;
+  position: relative;
+}
+
+.about-img-2 {
+  max-width: 100%;
+}
+
+.about-ellipse-2 {
+  width: 18.9rem;
+  height: 3.2rem;
+
+  position: absolute;
+  bottom: -1.6rem;
+  left: 3.3rem;
+  z-index: -9999;
+}
+
+.about-bottom-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 9.5rem;
+}
+
+.about-mini-col {
+  width: 15rem;
+  align-self: flex-start;
+}
+
+.about-h4 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-bottom-p {
+  font-size: 1.8rem;
+} */
+}
