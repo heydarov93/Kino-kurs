@@ -28,6 +28,10 @@ h4 {
   line-height: 1;
 }
 
+.hero-img-mobile {
+  display: none;
+}
+
 .main-container {
   max-width: var(--main-screen-width);
   margin: 0 auto;
@@ -305,7 +309,6 @@ h4 {
 
 .wwl-list-item {
   font-size: 2.4rem;
-  position: relative;
 }
 
 /* ****************************** */
@@ -328,20 +331,24 @@ h4 {
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.5rem;
 }
 
 .card {
-  width: calc(
+  /* width: calc(
     (var(--main-screen-width) - var(--lrpadding-cards-section)) /
       var(--card-number-inrow) - 3.5rem
-  );
-  /* max-width: 35rem; */
-  /* width: calc(33% - 3.5rem); */
-  margin: 3.5rem 3.5rem 0 0;
+  ); */
 
-  /* margin: 3.5rem auto 0; */
+  /* width: calc(33% - 3.5rem); */
+
+  /* margin: 3.5rem 3.5rem 0 0; */
+
   background: #fff;
   box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.25);
   border-radius: 3rem;
@@ -449,7 +456,7 @@ h4 {
 
 .tb-icon {
   width: 3.2rem;
-  height: 3.1;
+  height: 3.1rem;
 }
 
 /* ******************** */
@@ -525,6 +532,8 @@ h4 {
   width: 100vw;
   position: relative;
   left: calc(50% - 50vw);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -532,8 +541,6 @@ h4 {
 
 .footer-container {
   width: var(--main-screen-width);
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   color: #fff;
 
   display: flex;
@@ -597,6 +604,10 @@ h4 {
 
 @media (62em <= width < 80em) {
 
+  .main-container {
+    min-width: 99.2rem;
+    max-width: 127.9rem;
+  }
   .lr-padding {
     padding-left: 7rem;
     padding-right: 7rem;
@@ -700,86 +711,816 @@ h4 {
   margin-bottom: 2rem;
 }
 
-
-/*
-
-
-
 .about-right {
-  width: 36.6rem;
-  align-self: flex-end;
-
-  display: flex;
-  justify-content: center;
-
-  padding-bottom: 2.9rem;
-}
-
-.about-img-box {
-  position: relative;
+  width: 21.198rem; 
+  padding-bottom: 1.4rem;
 }
 
 .about-img-1 {
-  width: 31.4rem;
-  height: 31.5rem;
+  width: 18.186rem;
+  height: 18.244rem;
 }
 
 .about-ellipse-1 {
-  width: 36.6rem;
-  height: 5.9rem;
-  position: absolute;
-  right: -2.6rem;
-  bottom: -2.9rem;
-  z-index: -9999;
+  width: 21.198rem;
+  height: 3.417rem;
+ 
+  right: 50%;
+  bottom: -1.4rem;
+
+  transform: translateX(50%);
 }
 
 .about-bottom {
-  margin-top: 10rem;
+  margin-top: 6rem;
 
-  display: flex;
-  align-items: center;
-  gap: 13rem;
+  
+  gap: 7.6rem;
 }
 
 .about-bottom-left {
-  width: 23.2rem;
-  height: 20.3rem;
-  position: relative;
-}
-
-.about-img-2 {
-  max-width: 100%;
+  width: 13.437rem;
+  height: 11.757rem;
 }
 
 .about-ellipse-2 {
-  width: 18.9rem;
-  height: 3.2rem;
+  width: 10.946rem;
+  height: 1.853rem;
 
-  position: absolute;
-  bottom: -1.6rem;
-  left: 3.3rem;
-  z-index: -9999;
+  
+  bottom: -1rem;
+  left: 1.9rem;
 }
 
 .about-bottom-right {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 9.5rem;
+  gap: 5.5rem;
 }
 
 .about-mini-col {
-  width: 15rem;
-  align-self: flex-start;
+  width: 10.8rem;
 }
 
 .about-h4 {
-  font-weight: 700;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  /* margin-bottom: 1rem; */
 }
 
 .about-bottom-p {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
+} 
+
+
+/* ********************* */
+/* FORMAT LESSON SECTION */
+/* ********************* */
+
+.format-lesson-section {
+  margin-top: 9.4rem;
+}
+
+.format-les-title {
+  font-size: 3.2rem;
+  margin-bottom: 5.2rem;
+}
+
+.formats {
+  gap: 10rem;
+}
+
+.formats-col {
+  width: 17.2rem;
+}
+
+.formats-col-h4 {
+  font-size: 1.5rem;
+}
+
+.formats-col-p {
+  font-size: 1.1rem;
+}
+
+
+/* ********************* */
+/* WHAT WE'LL LEARN SECTION */
+/* ********************* */
+
+.what-we-learn-section {
+  margin-top: 10.5rem;
+}
+
+.wwl-title {
+  font-size: 3.2rem;
+
+  margin-bottom: 3.2rem;
+}
+
+.wwl-list {
+  width: 38.341rem;
+}
+
+
+.wwl-list-item {
+  font-size: 1.4rem;
+}
+
+
+/* ****************************** */
+/* COURSE PROGRAM (CARDS) SECTION */
+/* ****************************** */
+
+.course-program-section {
+  margin-top: 14.3rem;
+  /* padding: 0 6.4rem; */
+  margin-bottom: 6rem;
+}
+
+.program-title {
+  font-size: 3.2rem;
+
+  margin-bottom: 5.5rem;
+  /* margin-left: 3.6rem; */
+}
+
+.cards {
+  gap: 2.2rem;
+  grid-template-columns: repeat(3, 23.109rem);
+}
+/* 
+.card {
+  height: 19rem;
 } */
+
+.card-head {
+  height: 9.3rem;
+}
+
+.card-body {
+  height: 9.7rem;
+  padding: 0.7rem 1.2rem 1.3rem;
+}
+
+.card-title {
+  font-size: 1.7rem;
+}
+
+.card-text {
+  font-size: 1.4rem;
+}
+
+
+/* ******************* */
+/* TESTIMONIAL SECTION */
+/* ******************* */
+
+.testimonial-section {
+  padding-top: 5.2rem;
+  padding-bottom: 6.4rem;
+}
+
+.testimonial-title {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-quote {
+  width: 45.812rem;
+  height:  26.12rem;
+  border-radius: 1.8rem;
+  padding: 2.3rem 2.6rem;
+  padding-left: 1rem;
+}
+
+.tq-text {
+  width: 40.542rem;
+  font-size: 1.2rem;
+  /* margin-left: 2rem;
+  margin-bottom: 1.4rem; */
+}
+
+.tq-bottom {
+  gap: 1.8rem;
+}
+
+.testimonial-img {
+  width: 11rem;
+  height: 9.8rem;
+}
+
+.tb-author-name {
+  font-size: 1.7rem;
+}
+
+.tb-icon {
+  width: 1.9rem;
+  height: 1.8rem;
+}
+
+
+/* ******************** */
+/* ANNOUNCEMENT SECTION */
+/* ******************** */
+
+.announcement-section {
+  padding-top: 10.3rem;
+  padding-bottom: 10.7rem;
+}
+
+.ann-container {
+  width: var(--main-screen-width);
+}
+
+.ann-title {
+  font-size: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.price-box {
+  margin-bottom: 4.8rem;
+}
+
+.price-text {
+  font-size: 1.4rem;
+}
+
+.price strong,
+.price span {
+  font-size: 4.6rem;
+}
+
+.ann-details {
+  gap: 4rem;
+}
+
+.ann-detail-col {
+  width: 17.1rem;
+}
+
+.ann-detail-title {
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.ann-detail-text {
+  font-size: 1rem;
+}
+
+
+
+/* ******************** */
+/* FOOTER SECTION */
+/* ******************** */
+
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-container {
+  
+}
+
+.footer-left {
+}
+
+.footer-logo-box {
+  width: 6.66rem;
+  height: 3.938rem;
+  margin-bottom: 1.7rem;
+}
+
+.footer-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.social-icons-container {
+  margin-bottom: 8.5rem;
+}
+
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.social-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.copyright {
+  font-size: 1rem;
+}
+
+.footer-right-row {
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.footer-right-row img {
+  display: inline-block;
+  width: 1.564rem;
+  height: 1.043rem;
+  margin-right: 1.3rem;
+}
+}
+
+
+/* *********************************************** */
+/* tablet- ekran ölçüsü 320px-dən 991px-ə qədər  */
+/* ********************************************* */
+
+@media (20em <= width < 62em) {
+
+  .main-container {
+      min-width: 32rem;
+      max-width: 99.1rem;
+  }
+  
+
+    .lr-padding {
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+    }
+  
+  .logo-cont {
+    margin-bottom: 4.5rem;
+  }
+  
+  .logo-cont img {
+    width: 5.219rem;
+    height: 3.075rem;
+  }
+  
+  .header-mini-info {
+    gap: 1.2rem;
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+  }
+  
+  .header-mini-info img {
+    margin-right: 0.4rem;
+    width: 1.025rem;
+    height: 0.979rem;
+  }
+  
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .hero-left {
+    width: 29.263rem;
+  }
+  
+  .hero-title {
+    font-size: 3.7rem;
+    margin-bottom: 2.4rem;
+  }
+  
+  .hero-text {
+    font-size: 1rem;
+    width: 21.24rem;
+  }
+  
+  .hero-right {
+    text-align: right;
+  }
+  
+  .hero-right img {
+    display: none !important;
+    width: 14.168rem;
+    height: 17.51rem;
+  }
+
+  .hero-right .hero-img-mobile {
+    display: inline-block !important;
+  }
+  
+  .hero-right .ellipse-1 {
+   display: none;
+  }
+  
+  /*  **************    */
+  /*   QUOTE SECTION   */
+  /*  **************  */
+  
+  .quote-section {
+    margin-top: 3.9rem;
+  }
+  
+  .quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 22.536rem;
+    height: 9.319rem;
+    font-size: 1.1rem;
+    padding: 0.9rem 1.2rem;
+    border-radius: 2.33px;
+  }
+  
+  .quote-author {
+    font-size: 1rem;
+  }
+  
+  /*  **************    */
+  /*   ABOUT SECTION   */
+  /*  **************  */
+  
+  .about-section {
+    margin-top: 7.5rem;
+  }
+  
+  .about-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  
+  .about-left {
+    width: 30.847rem;
+  }
+  
+  .about-title {
+    font-size: 2.6rem;
+    margin-bottom: 4.8rem;
+  }
+  
+  .about-text {
+    font-size: 1.2rem;
+  }
+  
+  .about-text:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+  
+  .about-right {
+    width: 17.055rem;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    align-self: unset;
+  }
+  
+  .about-img-1 {
+   display: none;
+  }
+
+  .about-img-mobile {
+    display: inline-block !important;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .about-ellipse-1 {
+    display: none;
+  }
+  
+  .about-bottom {
+    margin-top: 4.5rem;
+  }
+  
+  .about-bottom-left {
+    display: none;
+  }
+    
+  .about-bottom-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 3.33rem;
+  }
+  
+  .about-mini-col {
+    width: 8.7rem;
+    align-self: flex-start;
+  }
+  
+  .about-h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-bottom-p {
+    font-size: 1rem;
+  }
+  
+  /* ********************* */
+  /* FORMAT LESSON SECTION */
+  /* ********************* */
+  
+  .format-lesson-section {
+    margin-top: 6.8rem;
+  }
+  
+  .format-les-title {
+    font-size: 2.6rem;
+    margin-bottom: 1.7rem;
+  }
+  
+  .formats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+  
+  .formats-col {
+    align-self: flex-start;
+    max-width: 18rem;
+  }
+  
+  .formats-col-h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .formats-col-p {
+    font-size: 1rem;
+  }
+  
+  /* ********************* */
+  /* WHAT WE'LL LEARN SECTION */
+  /* ********************* */
+  
+  .what-we-learn-section {
+    margin-top: 7.9rem;
+  }
+  
+  .wwl-title {
+    font-size: 2.6rem;
+    margin-bottom: 2.3rem;
+  }
+  
+  .wwl-list {
+    width: 29.9rem;
+    padding-left: 0.5rem;
+  }
+  
+  .wwl-list-item {
+    font-size: 1.2rem;
+  }
+  
+  /* ****************************** */
+  /* COURSE PROGRAM (CARDS) SECTION */
+  /* ****************************** */
+  
+  .course-program-section {
+    margin-top: 6.4rem;
+    padding: 0 3.4rem;
+    margin-bottom: 4.7rem;
+  }
+  
+  .program-title {
+    font-size: 2.6rem;
+  
+    margin-bottom: 4.7rem;
+    margin-left: 0;
+  }
+  
+  .cards {
+    /* display: flex;
+    flex-wrap: wrap; */
+  
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  
+  .card {
+    width: 18.5rem;
+    border-radius: 1.4rem;
+  }
+  
+  .card-head {
+    height: 7.5rem;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7.8rem;
+    padding: 0.5rem 0.9rem 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.4rem;
+  }
+  
+  .card-text {
+    font-size: 1.2rem;
+  }
+  
+  /* ******************* */
+  /* TESTIMONIAL SECTION */
+  /* ******************* */
+  
+  .testimonial-section {
+    padding-top: 4.2rem;
+    padding-bottom: 5.3rem;
+  }
+  
+  .testimonial-container {
+    width: var(--main-screen-width);
+  }
+  
+  .testimonial-title {
+   width: 25.7rem;
+    font-size:2.6rem;
+    margin-bottom: 2.8rem;
+  }
+  
+  .testimonial-quote {
+    width: 30.8rem;
+    height: unset;
+    border-radius: 1.4rem;
+    padding: 1.8rem 0;
+  }
+  
+  .tq-text {
+    width: unset;
+    font-size: 1rem;
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+    padding-inline: 2.1rem;
+  }
+  
+  .tq-bottom {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    padding-inline: 1.1rem;
+  }
+  
+  .tb-left {
+    display: inline-block;
+  }
+  
+  .testimonial-img {
+    width: 8rem;
+    height: 8.4rem;
+    border-radius: 50%;
+  }
+  
+  .tb-author-name {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tb-icon {
+    width: 1.5rem;
+    height: 1.7rem;
+  }
+  
+  /* ******************** */
+  /* ANNOUNCEMENT SECTION */
+  /* ******************** */
+  
+  .announcement-section {
+    background: #9dc9c8;
+    padding-top: 18rem;
+    padding-bottom: 18.5rem;
+  
+    width: 100vw;
+    position: relative;
+    left: calc(50% - 50vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ann-container {
+    width: var(--main-screen-width);
+  }
+  
+  .ann-title {
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    font-size: 5.5rem;
+    margin-bottom: 5.5rem;
+  }
+  
+  .price-box {
+    margin-bottom: 6.4rem;
+  }
+  
+  .price-text {
+    font-size: 2.5rem;
+  }
+  
+  .price strong,
+  .price span {
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 1;
+  }
+  
+  .ann-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 7rem;
+  }
+  
+  .ann-detail-col {
+    width: 29.4rem;
+  }
+  
+  .ann-detail-title {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 1.6rem;
+  }
+  
+  .ann-detail-text {
+    font-size: 1.8rem;
+  }
+  
+  /* ******************** */
+  /* FOOTER SECTION */
+  /* ******************** */
+  
+  .footer {
+    background-color: #000;
+    width: 100vw;
+    position: relative;
+    left: calc(50% - 50vw);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-container {
+    width: var(--main-screen-width);
+    color: #fff;
+  
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .footer-left {
+  }
+  
+  .footer-logo-box {
+    width: 11.5rem;
+    height: 6.8rem;
+    margin-bottom: 3rem;
+  }
+  
+  .footer-logo {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .social-icons-container {
+    margin-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .social-icon {
+    width: 3.3rem;
+    height: 3.3rem;
+  }
+  
+  .social-icon img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .copyright {
+    font-size: 1.8rem;
+  }
+  
+  .footer-right-row {
+    font-size: 2.5rem;
+    margin-bottom: 1.6rem;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-right-row img {
+    display: inline-block;
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-right: 2.2rem;
+  }
 }
