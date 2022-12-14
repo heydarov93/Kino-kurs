@@ -1030,9 +1030,7 @@ h4 {
 
 @media (20em <= width < 62em) {
 
-  html {
-    font-size: 56.25%;
-  }
+  
   .main-container {
     min-width: 32rem;
     max-width: 37.4rem;
