@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
-
+ 
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +28,8 @@ h4 {
   line-height: 1;
 }
 
-.hero-img-mobile {
+.hero-img-mobile,
+.about-img-mobile {
   display: none;
 }
 
@@ -604,12 +605,11 @@ h4 {
 
 @media (62em <= width < 80em) {
   .main-container {
-    min-width: 99.2rem;
-    max-width: 127.9rem;
+    max-width: 83.4rem;
   }
   .lr-padding {
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 3.5rem;
+    padding-right: 0;
   }
 
   .logo-cont {
@@ -630,6 +630,11 @@ h4 {
   .header-mini-info img {
     width: 1.274rem;
     height: 1.216rem;
+  }
+
+  .hero-section {
+    gap: 8rem;
+    justify-content: flex-start;
   }
 
   .hero-left {
@@ -689,6 +694,11 @@ h4 {
 
   .about-section {
     margin-top: 10rem;
+  }
+
+  .about-main {
+    gap: 9.6rem;
+    justify-content: flex-start;
   }
 
   .about-left {
@@ -821,7 +831,7 @@ h4 {
 
   .course-program-section {
     margin-top: 14.3rem;
-    /* padding: 0 6.4rem; */
+    padding-inline: 4.8rem;
     margin-bottom: 6rem;
   }
 
@@ -836,11 +846,10 @@ h4 {
     gap: 2.2rem;
     grid-template-columns: repeat(3, 23.109rem);
   }
-  /* 
+ 
 .card {
-  height: 19rem;
-} */
-
+  border-radius: 1.7rem;
+}
   .card-head {
     height: 9.3rem;
   }
@@ -865,6 +874,10 @@ h4 {
   .testimonial-section {
     padding-top: 5.2rem;
     padding-bottom: 6.4rem;
+  }
+
+  .testimonial-container {
+    max-width: 83.4rem;
   }
 
   .testimonial-title {
@@ -915,7 +928,7 @@ h4 {
   }
 
   .ann-container {
-    width: var(--main-screen-width);
+    max-width: 83.4rem;
   }
 
   .ann-title {
@@ -963,6 +976,7 @@ h4 {
   }
 
   .footer-container {
+    max-width: 83.4rem;
   }
 
   .footer-left {
@@ -1011,17 +1025,22 @@ h4 {
 }
 
 /* *********************************************** */
-/* tablet- ekran ölçüsü 320px-dən 991px-ə qədər  */
+/* mobil- ekran ölçüsü 320px-dən 991px-ə qədər  */
 /* ********************************************* */
 
 @media (20em <= width < 62em) {
+
+  html {
+    font-size: 56.25%;
+  }
   .main-container {
-   max-width: 39.4rem;
+    min-width: 32rem;
+    max-width: 37.4rem;
   }
 
   .lr-padding {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
   }
 
   .logo-cont {
@@ -1052,7 +1071,7 @@ h4 {
   }
 
   .hero-left {
-    width: 29.263rem;
+    max-width: 29rem;
   }
 
   .hero-title {
@@ -1062,7 +1081,7 @@ h4 {
 
   .hero-text {
     font-size: 1rem;
-    width: 21.24rem;
+    max-width: 21rem;
   }
 
   .hero-right {
@@ -1071,8 +1090,8 @@ h4 {
 
   .hero-right img {
     display: none !important;
-    width: 14.168rem;
-    height: 17.51rem;
+    width: 14rem;
+    height: 17rem;
   }
 
   .hero-right .hero-img-mobile {
@@ -1096,8 +1115,8 @@ h4 {
     flex-direction: column;
     justify-content: space-between;
 
-    width: 22.536rem;
-    height: 9.319rem;
+    max-width: 22.536rem;
+    height: 10rem;
     font-size: 1.1rem;
     padding: 0.9rem 1.2rem;
     border-radius: 2.33px;
@@ -1124,7 +1143,7 @@ h4 {
   }
 
   .about-left {
-    width: 30.847rem;
+    max-width: 30rem;
   }
 
   .about-title {
@@ -1141,7 +1160,7 @@ h4 {
   }
 
   .about-right {
-    width: 17.055rem;
+    max-width: 17rem;
     display: flex;
     justify-content: center;
     padding: 0;
@@ -1175,7 +1194,7 @@ h4 {
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 3.33rem;
+    gap: 5rem;
   }
 
   .about-mini-col {
@@ -1241,7 +1260,7 @@ h4 {
   }
 
   .wwl-list {
-    width: 29.9rem;
+    max-width: 29.9rem;
     padding-left: 0.5rem;
   }
 
@@ -1316,24 +1335,25 @@ h4 {
   }
 
   .testimonial-container {
-    width: unset;
+    min-width: 32rem;
+    max-width: 37.4rem;
   }
 
   .testimonial-title {
-    width: 25.7rem;
+    max-width: 100%;
     font-size: 2.6rem;
     margin-bottom: 2.8rem;
   }
 
   .testimonial-quote {
-    width: 30.8rem;
+    max-width: 100%;
     height: unset;
     border-radius: 1.4rem;
     padding: 1.8rem 0;
   }
 
   .tq-text {
-    width: unset;
+    max-width: 100%;
     font-size: 1rem;
     margin-left: 0;
     margin-bottom: 1.5rem;
@@ -1378,7 +1398,8 @@ h4 {
   }
 
   .ann-container {
-    width: unset;
+    min-width: 32rem;
+    max-width: 37.4rem;
   }
 
   .ann-title {
@@ -1406,10 +1427,11 @@ h4 {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 3.1rem;
+    width: 100%;
   }
 
   .ann-detail-col {
-    width: 13.8rem;
+    width: unset;
   }
 
   .ann-detail-title {
@@ -1431,7 +1453,8 @@ h4 {
   }
 
   .footer-container {
-    width: unset;
+    min-width: 32rem;
+    max-width: 37.4rem;
     position: relative;
 
     display: flex;
