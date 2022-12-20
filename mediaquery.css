@@ -558,8 +558,8 @@
     }
   
     .about-left {
-      max-width: 30rem;
-    }
+       width: 100%;
+     }
   
     .about-title {
       font-size: 2.6rem;
