@@ -42,9 +42,6 @@ h4 {
   /* margin-bottom: 50vh; */
 }
 
-.lr-padding {
-  padding: 0 8.5rem;
-}
 
 .logo-cont {
   margin-bottom: 9.6rem;
@@ -69,12 +66,13 @@ h4 {
 }
 
 .hero-section {
+  max-width: 107.3rem;
   display: flex;
   justify-content: space-between;
 }
 
 .hero-left {
-  width: 62.8rem;
+  max-width: 56.8rem;
 }
 
 .hero-title {
@@ -82,28 +80,31 @@ h4 {
   font-size: 8rem;
   font-weight: 700;
   margin-bottom: 2.4rem;
+  width: 100%;
 }
 
 .hero-text {
   font-size: 2rem;
-  width: 41.4rem;
+  max-width: 41.4rem;
 }
 
 .hero-right {
   position: relative;
+  max-width: 30.5rem;
+  height: 37.6rem;
 }
 
 .hero-right img {
-  width: 30.4rem;
+  width: 100%;
   height: 35.6rem;
 }
 
 .hero-right .ellipse-1 {
-  width: 27.4rem;
+  max-width: 27.4rem;
   height: 4.1rem;
   position: absolute;
-  left: 3.1rem;
-  bottom: -2rem;
+  right: 0;
+  bottom: 0;
   z-index: -9999;
 }
 
@@ -112,6 +113,7 @@ h4 {
 /*  **************  */
 
 .quote-section {
+  max-width: 107.3rem;
   display: flex;
   justify-content: center;
   margin-top: 8.8rem;
@@ -122,8 +124,8 @@ h4 {
   background-color: #1e4681;
   color: #fff;
   padding: 2rem 2.6rem;
-  width: 48.4rem;
-  height: 22rem;
+  max-width: 48.4rem;
+  min-height: 22rem;
   border-radius: 5px;
 }
 
@@ -141,17 +143,18 @@ h4 {
 /*  **************  */
 
 .about-section {
-  margin-top: 17.5rem;
+  margin-top: 17.3rem;
 }
 
 .about-main {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  gap: 16.4rem;
 }
 
 .about-left {
-  width: 66.2rem;
+  max-width: 66.2rem;
 }
 
 .about-title {
@@ -172,35 +175,34 @@ h4 {
 }
 
 .about-right {
-  width: 36.6rem;
   align-self: flex-end;
-
   display: flex;
-  justify-content: center;
-
-  padding-bottom: 2.9rem;
 }
 
 .about-img-box {
   position: relative;
+  width: 36.6rem;
+  height: 36.4rem;
+  display: flex;
+  justify-content: center;
 }
 
 .about-img-1 {
-  width: 31.4rem;
-  height: 31.5rem;
+  max-width: 31.4rem;
+  max-height: 33.3rem;
 }
 
 .about-ellipse-1 {
-  width: 36.6rem;
-  height: 5.9rem;
+  width: 100%;
+  height: 6.3rem;
   position: absolute;
-  right: -2.6rem;
-  bottom: -2.9rem;
+  right: 0;
+  bottom: 0;
   z-index: -9999;
 }
 
 .about-bottom {
-  margin-top: 10rem;
+  margin-top: 6.6rem;
 
   display: flex;
   align-items: center;
@@ -208,34 +210,34 @@ h4 {
 }
 
 .about-bottom-left {
-  width: 23.2rem;
-  height: 20.3rem;
+  max-width: 23.2rem;
+  height: 21.9rem;
   position: relative;
 }
 
 .about-img-2 {
-  max-width: 100%;
+  width: 100%;
 }
 
 .about-ellipse-2 {
-  width: 18.9rem;
-  height: 3.2rem;
+  max-width: 18.9rem;
+  max-height: 3.2rem;
 
   position: absolute;
-  bottom: -1.6rem;
+  bottom: 0;
   left: 3.3rem;
   z-index: -9999;
 }
 
 .about-bottom-right {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 9.5rem;
 }
 
 .about-mini-col {
-  width: 15rem;
+  max-width: 15rem;
   align-self: flex-start;
 }
 
@@ -247,6 +249,7 @@ h4 {
 
 .about-bottom-p {
   font-size: 1.8rem;
+  width: 100%
 }
 
 /* ********************* */
@@ -254,36 +257,37 @@ h4 {
 /* ********************* */
 
 .format-lesson-section {
-  margin-top: 17.8rem;
+  margin-top: 16.2rem;
 }
 
 .format-les-title {
   font-family: "Roboto Slab";
   font-weight: 700;
   font-size: 5.5rem;
-  margin-bottom: 9rem;
+  margin-bottom: 8.9rem;
 }
 
 .formats {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
-  gap: 11.5rem;
+  gap: 11.3rem;
 }
 
 .formats-col {
-  align-self: flex-start;
+  max-width: 27.1rem;
 }
 
 .formats-col-h4 {
   font-weight: 700;
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 
   color: #1e4681;
 }
 
 .formats-col-p {
+  width: 100%;
   font-size: 1.8rem;
 }
 
@@ -292,7 +296,7 @@ h4 {
 /* ********************* */
 
 .what-we-learn-section {
-  margin-top: 18rem;
+  margin-top: 21.7rem;
 }
 
 .wwl-title {
@@ -300,15 +304,16 @@ h4 {
   font-weight: 700;
   font-size: 5.5rem;
 
-  margin-bottom: 3.2rem;
+  margin-bottom: 4.8rem;
 }
 
 .wwl-list {
-  width: 67.8rem;
-  padding-left: 1.6rem;
+  max-width: 66.2rem;
+  padding-left: 2.2rem;
 }
 
 .wwl-list-item {
+  width: 100%;
   font-size: 2.4rem;
 }
 
@@ -317,9 +322,9 @@ h4 {
 /* ****************************** */
 
 .course-program-section {
-  margin-top: 23rem;
-  padding: 0 6.4rem;
-  margin-bottom: 12rem;
+  margin-top: 22.7rem;
+  padding: 0;
+  margin-bottom: 12.1rem;
 }
 
 .program-title {
@@ -327,17 +332,17 @@ h4 {
   font-weight: 700;
   font-size: 5.5rem;
 
-  margin-bottom: 9.6rem;
+  margin-bottom: 12rem;
   margin-left: 3.6rem;
 }
 
 .cards {
   /* display: flex;
   flex-wrap: wrap; */
-
+  max-width: 127.1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3.5rem;
+  gap: 3.7rem;
 }
 
 .card {
@@ -374,11 +379,11 @@ h4 {
 
 .card-title {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .card-text {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 /* ******************* */
@@ -388,8 +393,8 @@ h4 {
 .testimonial-section {
   position: relative;
   width: 100vw;
-  padding-top: 9rem;
-  padding-bottom: 11rem;
+  padding-top: 9.1rem;
+  padding-bottom: 11.1rem;
   background-color: #efefef;
 
   /* center the child using a negative left */
@@ -404,19 +409,19 @@ h4 {
 }
 
 .testimonial-container {
-  width: var(--main-screen-width);
+      width: var(--main-screen-width);
 }
 
 .testimonial-title {
   font-family: "Roboto Slab";
   font-weight: 700;
   font-size: 5.5rem;
-  margin-bottom: 6.4rem;
+  margin-bottom: 5.6rem;
 }
 
 .testimonial-quote {
-  width: 79.1rem;
-  height: 45.1rem;
+  max-width: 79.1rem;
+  min-height: 45.1rem;
   box-shadow: 0.1rem 0.1rem 2rem rgba(0, 0, 0, 0.25);
   border-radius: 3rem;
 
@@ -425,10 +430,10 @@ h4 {
 }
 
 .tq-text {
-  width: 70rem;
+  max-width: 70rem;
   font-size: 2rem;
   margin-left: 2rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.1rem;
 }
 
 .tq-bottom {
@@ -442,7 +447,7 @@ h4 {
 }
 
 .testimonial-img {
-  width: 19rem;
+  max-width: 19rem;
   height: 16.9rem;
   border-radius: 50%;
 }
@@ -466,7 +471,7 @@ h4 {
 
 .announcement-section {
   background: #9dc9c8;
-  padding-top: 18rem;
+  padding-top: 17.9rem;
   padding-bottom: 18.5rem;
 
   width: 100vw;
@@ -484,7 +489,7 @@ h4 {
 .ann-title {
   font-family: "Roboto Slab";
   font-weight: 700;
-  font-size: 5.5rem;
+  font-size: 5.4rem;
   margin-bottom: 5.5rem;
 }
 
@@ -511,7 +516,7 @@ h4 {
 }
 
 .ann-detail-col {
-  width: 29.4rem;
+  max-width: 29.4rem;
 }
 
 .ann-detail-title {
@@ -534,7 +539,7 @@ h4 {
   position: relative;
   left: calc(50% - 50vw);
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -597,924 +602,4 @@ h4 {
   width: 2.7rem;
   height: 2.7rem;
   margin-right: 2.2rem;
-}
-
-/* *********************************************** */
-/* tablet- ekran ölçüsü 992px-dən 1279px-ə qədər  */
-/* ********************************************* */
-
-@media (62em <= width < 80em) {
-  .main-container {
-    max-width: 83.4rem;
-  }
-  .lr-padding {
-    padding-left: 3.5rem;
-    padding-right: 0;
-  }
-
-  .logo-cont {
-    margin-bottom: 5.68rem;
-  }
-
-  .logo-cont img {
-    width: 6.487rem;
-    height: 3.823rem;
-  }
-
-  .header-mini-info {
-    gap: 1.5rem;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-
-  .header-mini-info img {
-    width: 1.274rem;
-    height: 1.216rem;
-  }
-
-  .hero-section {
-    gap: 8rem;
-    justify-content: flex-start;
-  }
-
-  .hero-left {
-    width: 36.372rem;
-  }
-
-  .hero-title {
-    font-size: 4.6rem;
-    margin-bottom: 2.4rem;
-  }
-
-  .hero-text {
-    font-size: 1.2rem;
-    width: 26.4rem;
-  }
-
-  .hero-right img {
-    width: 17.607rem;
-    height: 20.618rem;
-  }
-
-  .hero-right .ellipse-1 {
-    width: 15.869rem;
-    height: 2.375rem;
-
-    left: 1.8rem;
-    bottom: -0.6rem;
-  }
-
-  /*  **************    */
-  /*   QUOTE SECTION   */
-  /*  **************  */
-
-  .quote-section {
-    margin-top: 5rem;
-  }
-
-  .quote {
-    font-size: 1.4rem;
-    padding: 1.1rem 1.5rem;
-    width: 28.011rem;
-    height: 11.583rem;
-    border-radius: 0.3rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .quote-author {
-    font-size: 1.2rem;
-  }
-
-  /*  **************    */
-  /*   ABOUT SECTION   */
-  /*  **************  */
-
-  .about-section {
-    margin-top: 10rem;
-  }
-
-  .about-main {
-    gap: 9.6rem;
-    justify-content: flex-start;
-  }
-
-  .about-left {
-    width: 38.341rem;
-  }
-
-  .about-title {
-    font-size: 3.2rem;
-    margin-bottom: 3rem;
-  }
-
-  .about-text {
-    font-size: 1.4rem;
-  }
-
-  .about-text:not(:last-child) {
-    margin-bottom: 2rem;
-  }
-
-  .about-right {
-    width: 21.198rem;
-    padding-bottom: 1.4rem;
-  }
-
-  .about-img-1 {
-    width: 18.186rem;
-    height: 18.244rem;
-  }
-
-  .about-ellipse-1 {
-    width: 21.198rem;
-    height: 3.417rem;
-
-    right: 50%;
-    bottom: -1.4rem;
-
-    transform: translateX(50%);
-  }
-
-  .about-bottom {
-    margin-top: 6rem;
-
-    gap: 7.6rem;
-  }
-
-  .about-bottom-left {
-    width: 13.437rem;
-    height: 11.757rem;
-  }
-
-  .about-ellipse-2 {
-    width: 10.946rem;
-    height: 1.853rem;
-
-    bottom: -1rem;
-    left: 1.9rem;
-  }
-
-  .about-bottom-right {
-    gap: 5.5rem;
-  }
-
-  .about-mini-col {
-    width: 10.8rem;
-  }
-
-  .about-h4 {
-    font-size: 1.5rem;
-    /* margin-bottom: 1rem; */
-  }
-
-  .about-bottom-p {
-    font-size: 1.1rem;
-  }
-
-  /* ********************* */
-  /* FORMAT LESSON SECTION */
-  /* ********************* */
-
-  .format-lesson-section {
-    margin-top: 9.4rem;
-  }
-
-  .format-les-title {
-    font-size: 3.2rem;
-    margin-bottom: 5.2rem;
-  }
-
-  .formats {
-    gap: 10rem;
-  }
-
-  .formats-col {
-    width: 17.2rem;
-  }
-
-  .formats-col-h4 {
-    font-size: 1.5rem;
-  }
-
-  .formats-col-p {
-    font-size: 1.1rem;
-  }
-
-  /* ********************* */
-  /* WHAT WE'LL LEARN SECTION */
-  /* ********************* */
-
-  .what-we-learn-section {
-    margin-top: 10.5rem;
-  }
-
-  .wwl-title {
-    font-size: 3.2rem;
-
-    margin-bottom: 3.2rem;
-  }
-
-  .wwl-list {
-    width: 38.341rem;
-  }
-
-  .wwl-list-item {
-    font-size: 1.4rem;
-  }
-
-  /* ****************************** */
-  /* COURSE PROGRAM (CARDS) SECTION */
-  /* ****************************** */
-
-  .course-program-section {
-    margin-top: 14.3rem;
-    padding-inline: 4.8rem;
-    margin-bottom: 6rem;
-  }
-
-  .program-title {
-    font-size: 3.2rem;
-
-    margin-bottom: 5.5rem;
-    /* margin-left: 3.6rem; */
-  }
-
-  .cards {
-    gap: 2.2rem;
-    grid-template-columns: repeat(3, 23.109rem);
-  }
- 
-.card {
-  border-radius: 1.7rem;
-}
-  .card-head {
-    height: 9.3rem;
-  }
-
-  .card-body {
-    height: 9.7rem;
-    padding: 0.7rem 1.2rem 1.3rem;
-  }
-
-  .card-title {
-    font-size: 1.7rem;
-  }
-
-  .card-text {
-    font-size: 1.4rem;
-  }
-
-  /* ******************* */
-  /* TESTIMONIAL SECTION */
-  /* ******************* */
-
-  .testimonial-section {
-    padding-top: 5.2rem;
-    padding-bottom: 6.4rem;
-  }
-
-  .testimonial-container {
-    max-width: 83.4rem;
-  }
-
-  .testimonial-title {
-    font-size: 3.2rem;
-    margin-bottom: 2rem;
-  }
-
-  .testimonial-quote {
-    width: 45.812rem;
-    height: 26.12rem;
-    border-radius: 1.8rem;
-    padding: 2.3rem 2.6rem;
-    padding-left: 1rem;
-  }
-
-  .tq-text {
-    width: 40.542rem;
-    font-size: 1.2rem;
-    /* margin-left: 2rem;
-  margin-bottom: 1.4rem; */
-  }
-
-  .tq-bottom {
-    gap: 1.8rem;
-  }
-
-  .testimonial-img {
-    width: 11rem;
-    height: 9.8rem;
-  }
-
-  .tb-author-name {
-    font-size: 1.7rem;
-  }
-
-  .tb-icon {
-    width: 1.9rem;
-    height: 1.8rem;
-  }
-
-  /* ******************** */
-  /* ANNOUNCEMENT SECTION */
-  /* ******************** */
-
-  .announcement-section {
-    padding-top: 10.3rem;
-    padding-bottom: 10.7rem;
-  }
-
-  .ann-container {
-    max-width: 83.4rem;
-  }
-
-  .ann-title {
-    font-size: 3.2rem;
-    margin-bottom: 3.2rem;
-  }
-
-  .price-box {
-    margin-bottom: 4.8rem;
-  }
-
-  .price-text {
-    font-size: 1.4rem;
-  }
-
-  .price strong,
-  .price span {
-    font-size: 4.6rem;
-  }
-
-  .ann-details {
-    gap: 4rem;
-  }
-
-  .ann-detail-col {
-    width: 17.1rem;
-  }
-
-  .ann-detail-title {
-    font-size: 1.4rem;
-    margin-bottom: 1.6rem;
-  }
-
-  .ann-detail-text {
-    font-size: 1rem;
-  }
-
-  /* ******************** */
-  /* FOOTER SECTION */
-  /* ******************** */
-
-  .footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .footer-container {
-    max-width: 83.4rem;
-  }
-
-  .footer-left {
-  }
-
-  .footer-logo-box {
-    width: 6.66rem;
-    height: 3.938rem;
-    margin-bottom: 1.7rem;
-  }
-
-  .footer-logo {
-    width: 100%;
-    height: 100%;
-  }
-
-  .social-icons-container {
-    margin-bottom: 8.5rem;
-  }
-
-  .social-icon {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .social-icon img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .copyright {
-    font-size: 1rem;
-  }
-
-  .footer-right-row {
-    font-size: 1.4rem;
-    margin-bottom: 1.6rem;
-  }
-
-  .footer-right-row img {
-    display: inline-block;
-    width: 1.564rem;
-    height: 1.043rem;
-    margin-right: 1.3rem;
-  }
-}
-
-/* *********************************************** */
-/* mobil- ekran ölçüsü 320px-dən 991px-ə qədər  */
-/* ********************************************* */
-
-@media (20em <= width < 62em) {
-
-  
-  .main-container {
-    min-width: 32rem;
-    max-width: 37.4rem;
-  }
-
-  .lr-padding {
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-  }
-
-  .logo-cont {
-    margin-bottom: 4.5rem;
-  }
-
-  .logo-cont img {
-    width: 5.219rem;
-    height: 3.075rem;
-  }
-
-  .header-mini-info {
-    gap: 1.2rem;
-    font-size: 1rem;
-    margin-bottom: 1.3rem;
-  }
-
-  .header-mini-info img {
-    margin-right: 0.4rem;
-    width: 1.025rem;
-    height: 0.979rem;
-  }
-
-  .hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .hero-left {
-    max-width: 29rem;
-  }
-
-  .hero-title {
-    font-size: 3.7rem;
-    margin-bottom: 2.4rem;
-  }
-
-  .hero-text {
-    font-size: 1rem;
-    max-width: 21rem;
-  }
-
-  .hero-right {
-    text-align: right;
-  }
-
-  .hero-right img {
-    display: none !important;
-    width: 14rem;
-    height: 17rem;
-  }
-
-  .hero-right .hero-img-mobile {
-    display: inline-block !important;
-  }
-
-  .hero-right .ellipse-1 {
-    display: none;
-  }
-
-  /*  **************    */
-  /*   QUOTE SECTION   */
-  /*  **************  */
-
-  .quote-section {
-    margin-top: 3.9rem;
-  }
-
-  .quote {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    max-width: 22.536rem;
-    height: 10rem;
-    font-size: 1.1rem;
-    padding: 0.9rem 1.2rem;
-    border-radius: 2.33px;
-  }
-
-  .quote-author {
-    font-size: 1rem;
-  }
-
-  /*  **************    */
-  /*   ABOUT SECTION   */
-  /*  **************  */
-
-  .about-section {
-    margin-top: 7.5rem;
-  }
-
-  .about-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.6rem;
-  }
-
-  .about-left {
-    max-width: 30rem;
-  }
-
-  .about-title {
-    font-size: 2.6rem;
-    margin-bottom: 4.8rem;
-  }
-
-  .about-text {
-    font-size: 1.2rem;
-  }
-
-  .about-text:not(:last-child) {
-    margin-bottom: 2.4rem;
-  }
-
-  .about-right {
-    max-width: 17rem;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    align-self: unset;
-  }
-
-  .about-img-1 {
-    display: none;
-  }
-
-  .about-img-mobile {
-    display: inline-block !important;
-    width: 100%;
-    height: 100%;
-  }
-
-  .about-ellipse-1 {
-    display: none;
-  }
-
-  .about-bottom {
-    margin-top: 4.5rem;
-  }
-
-  .about-bottom-left {
-    display: none;
-  }
-
-  .about-bottom-right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 5rem;
-  }
-
-  .about-mini-col {
-    width: 8.7rem;
-    align-self: flex-start;
-  }
-
-  .about-h4 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-
-  .about-bottom-p {
-    font-size: 1rem;
-  }
-
-  /* ********************* */
-  /* FORMAT LESSON SECTION */
-  /* ********************* */
-
-  .format-lesson-section {
-    margin-top: 6.8rem;
-  }
-
-  .format-les-title {
-    font-size: 2.6rem;
-    margin-bottom: 1.7rem;
-  }
-
-  .formats {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 3rem;
-  }
-
-  .formats-col {
-    align-self: flex-start;
-    max-width: 18rem;
-  }
-
-  .formats-col-h4 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .formats-col-p {
-    font-size: 1rem;
-  }
-
-  /* ********************* */
-  /* WHAT WE'LL LEARN SECTION */
-  /* ********************* */
-
-  .what-we-learn-section {
-    margin-top: 7.9rem;
-  }
-
-  .wwl-title {
-    font-size: 2.6rem;
-    margin-bottom: 2.3rem;
-  }
-
-  .wwl-list {
-    max-width: 29.9rem;
-    padding-left: 0.5rem;
-  }
-
-  .wwl-list-item {
-    font-size: 1.2rem;
-  }
-
-  /* ****************************** */
-  /* COURSE PROGRAM (CARDS) SECTION */
-  /* ****************************** */
-
-  .course-program-section {
-    margin-top: 6.4rem;
-    padding: 0 3.4rem;
-    margin-bottom: 4.7rem;
-  }
-
-  .program-title {
-    font-size: 2.6rem;
-
-    margin-bottom: 4.7rem;
-    margin-left: 0;
-  }
-
-  .cards {
-    /* display: flex;
-    flex-wrap: wrap; */
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-  }
-
-  .card {
-    width: 18.5rem;
-    border-radius: 1.4rem;
-  }
-
-  .card-head {
-    height: 7.5rem;
-  }
-
-  .card-img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 7.8rem;
-    padding: 0.5rem 0.9rem 1rem;
-  }
-
-  .card-title {
-    font-size: 1.4rem;
-  }
-
-  .card-text {
-    font-size: 1.2rem;
-  }
-
-  /* ******************* */
-  /* TESTIMONIAL SECTION */
-  /* ******************* */
-
-  .testimonial-section {
-    padding-top: 4.2rem;
-    padding-bottom: 5.3rem;
-  }
-
-  .testimonial-container {
-    min-width: 32rem;
-    max-width: 37.4rem;
-  }
-
-  .testimonial-title {
-    max-width: 100%;
-    font-size: 2.6rem;
-    margin-bottom: 2.8rem;
-  }
-
-  .testimonial-quote {
-    max-width: 100%;
-    height: unset;
-    border-radius: 1.4rem;
-    padding: 1.8rem 0;
-  }
-
-  .tq-text {
-    max-width: 100%;
-    font-size: 1rem;
-    margin-left: 0;
-    margin-bottom: 1.5rem;
-    padding-inline: 2.1rem;
-  }
-
-  .tq-bottom {
-    display: flex;
-    align-items: center;
-    gap: 1.3rem;
-    padding-inline: 1.1rem;
-  }
-
-  .tb-left {
-    display: inline-block;
-  }
-
-  .testimonial-img {
-    width: 8rem;
-    height: 8.4rem;
-    border-radius: 50%;
-  }
-
-  .tb-author-name {
-    font-size: 1.4rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .tb-icon {
-    width: 1.5rem;
-    height: 1.7rem;
-  }
-
-  /* ******************** */
-  /* ANNOUNCEMENT SECTION */
-  /* ******************** */
-
-  .announcement-section {
-    background: #9dc9c8;
-    padding-top: 6.2rem;
-    padding-bottom: 6.3rem;
-  }
-
-  .ann-container {
-    min-width: 32rem;
-    max-width: 37.4rem;
-  }
-
-  .ann-title {
-    font-size: 2.6rem;
-    margin-bottom: 3rem;
-    max-width: 22.4rem;
-    line-height: 1.2;
-  }
-
-  .price-box {
-    margin-bottom: 3.2rem;
-  }
-
-  .price-text {
-    font-size: 1.2rem;
-  }
-
-  .price strong,
-  .price span {
-    font-size: 3.7rem;
-  }
-
-  .ann-details {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 3.1rem;
-    width: 100%;
-  }
-
-  .ann-detail-col {
-    width: unset;
-  }
-
-  .ann-detail-title {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .ann-detail-text {
-    font-size: 1rem;
-  }
-
-  /* ******************** */
-  /* FOOTER SECTION */
-  /* ******************** */
-
-  .footer {
-    padding-top: 2.4rem;
-    padding-bottom: 1.7rem;
-  }
-
-  .footer-container {
-    min-width: 32rem;
-    max-width: 37.4rem;
-    position: relative;
-
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .footer-left {
-  }
-
-  .footer-logo-box {
-    width: 5.4rem;
-    height: 3.2rem;
-    margin-bottom: 1.4rem;
-  }
-
-  .footer-logo {
-    width: 100%;
-    height: 100%;
-  }
-
-  .social-icons-container {
-    margin-bottom: 4.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.8rem;
-  }
-
-  .social-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  .social-icon img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .copyright {
-    font-size: 1rem;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .footer-right {
-    margin-bottom: 5.3rem;
-  }
-
-  .footer-right-row {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-
-    display: flex;
-    align-items: center;
-  }
-
-  .footer-right-row img {
-    display: inline-block;
-    width: 1.3rem;
-    height: 1.3rem;
-    margin-right: 1rem;
-  }
 }
