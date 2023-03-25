@@ -4,14 +4,14 @@
 I made it same as figma template that given me. 
 
 
-##### Responsibility
+### Responsibility
 - Desktop - screen size more than 1280px;
 - Tablet - screen size 992px t0 1279px;
 - Smartphone -  screen size 320px to 991px.
 
-##### Used technologies and features
+### Used technologies and features
 ***HTML 5***
 Semantic tags
 
-***Css 3***
+***CSS 3***
 Flexbox
