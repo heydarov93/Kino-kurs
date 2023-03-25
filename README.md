@@ -3,6 +3,7 @@
 ### Kino-kurs is a simple and responsive html, css web page/template. I built it freely after 2 week html css lessons at the course.
 I made it same as figma template that given me. 
 
+***<a href="https://kino-kurs.netlify.app">See Kino-Kurs web page</a>
 
 ### Responsibility
 - Desktop - screen size more than 1280px;
