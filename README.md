@@ -1,18 +1,33 @@
 # Kino-kurs
 
-### Kino-kurs is a simple and responsive html, css web page/template. I built it freely after 2 week html css lessons at the course.
-I made it same as figma template that given me. 
+Kino-Kurs is a static, responsive, single web page designed using HTML and CSS. The purpose of the project is to showcase the skills and knowledge acquired during the **<a href="http://it-academy.az/">IT Academy</a>** programming course. The project is designed using HTML semantic tags and CSS flexbox, and the font size is set using the rem unit.
 
 ***<a href="https://kino-kurs.netlify.app">See Kino-Kurs web page</a>***
 
-### Responsibility
-- Desktop - screen size more than 1280px;
-- Tablet - screen size 992px t0 1279px;
-- Smartphone -  screen size 320px to 991px.
+### Technologies Used
+- HTML
+- CSS
 
-### Used technologies and features
-***HTML 5***
-Semantic tags
+### Installation
+Since this is a static web page, you do not need to install any software or packages to run the project on your local machine. Simply download or clone the project files from the GitHub repository to your local machine and open the index.html file in a web browser.
 
-***CSS 3***
-Flexbox
+### Usage
+The Kino-Kurs web page is designed to display movie-related information. 
+
+### Contributors
+The project was created by [Yashar Heyderov
+
+### License
+This project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>
+
+### Acknowledgments
+The project was completed as a task in the IT Academy programming course. Thanks to the instructors and fellow students for their support and guidance during the course
+
+
+
+
+
+
+
+
+
