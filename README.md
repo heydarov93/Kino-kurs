@@ -15,10 +15,7 @@ Since this is a static web page, you do not need to install any software or pack
 The Kino-Kurs web page is designed to display movie-related information. 
 
 ### Contributors
-The project was created by [Yashar Heyderov
-
-### License
-This project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>
+The project was created by [Yashar Heyderov]
 
 ### Acknowledgments
 The project was completed as a task in the IT Academy programming course. Thanks to the instructors and fellow students for their support and guidance during the course
